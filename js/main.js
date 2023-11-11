@@ -18,3 +18,7 @@ function openMenu(){
     }
 
 }
+
+function back(){
+    window.history.back()
+}

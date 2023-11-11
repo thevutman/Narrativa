@@ -24,6 +24,8 @@
         left: 0;
         transition: .6s ease all;
 
+        animation: zoom .6s ease forwards;
+
         &.active{
             left: 100%;
         }
@@ -146,8 +148,13 @@
         margin-top: 64px;
         text-align: center;
         font-weight: 800;
+        
     }
-
+    &__title{
+        opacity: 0;
+        animation: up 1s ease .6s forwards;
+    }
+    
     &__container{
         display: flex;
         flex-direction: column;
@@ -157,6 +164,8 @@
         padding: 8px;
         border-radius: 12px;
         margin-top: 24px;
+
+        animation: zoom .6s ease forwards;
 
         p{
             background-color: $color6;
