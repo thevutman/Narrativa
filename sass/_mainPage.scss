@@ -12,6 +12,7 @@
     &__container{
         display: flex;
         flex-direction: column;
+        max-width: 320px; //******************************pc
         padding: 56px 16px 16px 16px;
         border-radius: 12px;
         background-color: $color6;
@@ -37,6 +38,12 @@
             font-weight: 400;
         }
 
+        p{
+            font-weight: 100;
+            font-size: 1.6rem;
+            padding: 12px;
+        }
+
         button{
             color: white;
             padding: 12px 20px;
@@ -49,6 +56,8 @@
             text-decoration: none;    
             cursor: pointer;    
             background-color: $color5;
+
+            transition: .3s ease all;
 
             &:hover{
                 background-color: $color2;
@@ -94,6 +103,9 @@
             font-size: 2rem;
             border-bottom: 2px solid $color2;
             padding: 12px 56px;
+            transition: .6s ease all;
+            cursor: pointer;
+            background-color: $color6;
 
             a{
                 color: $color4;
@@ -103,6 +115,12 @@
 
             &--nexo{
                 border: none;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: $color2;
+                border-radius: 16px 16px 0 0;
             }
         }
 
@@ -142,20 +160,47 @@
 
         p{
             background-color: $color6;
-            padding: 20px;
+            padding: 16px 20px 0px 20px;
             font-size: 1.6rem;
             font-family: 'Roboto Mono', monospace;
             font-weight: 100;
             // font-family: 'Averia Serif Libre', serif;
             text-align: justify;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0;
 
             &:nth-child(1){
                 border-radius: 12px 12px 0 0;
+                padding-top: 28px;
             }
             &:nth-last-child(1){
                 border-radius: 0 0 12px 12px;
+                padding-bottom: 28px;
+            }
+        }
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: space-between;
+        margin: 16px;
+        a{
+            color: white;
+            padding: 12px 20px;
+            width: 120px;
+            text-align: center;
+            border: none;
+            border-radius: 24px;
+            font-size: 1.6rem;   
+            font-weight: 700; 
+            text-decoration: none;    
+            cursor: pointer;    
+            background-color: $color5;
+
+            transition: .3s ease all;
+
+            &:hover{
+                background-color: $color2;
             }
         }
     }
@@ -212,6 +257,21 @@
                     padding: 10px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        &__container{
+            max-width: 500px;
+        }
+    }
+
+    .tale{
+        &__btns{
+            justify-content: center;
+            gap: 40px;
         }
     }
 }

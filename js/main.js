@@ -13,4 +13,8 @@ function menu2(){
 
 function openMenu(){
     document.getElementById('menu__options').classList.toggle('active')
+    for(var i=0; i<3; i++){
+        document.querySelectorAll('.menu__desing')[i].classList.toggle('active')
+    }
+
 }
