@@ -1,0 +1,310 @@
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #181818;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 4px;
+  padding: 20px;
+}
+.menu__desing {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: #fffffa;
+  border-radius: 20px;
+}
+.menu__options {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  position: absolute;
+  left: 100%;
+  top: 60px;
+}
+.menu__options ul {
+  list-style: none;
+}
+.menu__options ul li {
+  color: #fffffa;
+}
+.menu__options.active {
+  left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  position: relative;
+  overflow: hidden;
+}
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 56px 16px 16px 16px;
+  border-radius: 12px;
+  background-color: #282828;
+  color: #fffffa;
+  -webkit-box-shadow: 14px 14px 20px 0px rgba(255, 255, 255, 0.03);
+          box-shadow: 14px 14px 20px 0px rgba(255, 255, 255, 0.03);
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+.main__container.active {
+  left: 100%;
+}
+.main__container h1 {
+  font-size: 2.6rem;
+}
+.main__container h2 {
+  margin-top: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.main__container button {
+  color: white;
+  padding: 12px 20px;
+  margin-top: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #404040;
+}
+.main__container button:hover {
+  background-color: #b3b3b3;
+}
+.main__container::before {
+  content: "";
+  width: 100%;
+  height: 40px;
+  background-color: #181818;
+  border-radius: 12px 12px 0px 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  padding-top: 56px;
+  border-radius: 12px;
+  background-color: #282828;
+  color: #fffffa;
+  -webkit-box-shadow: 14px 14px 20px 0px rgba(255, 255, 255, 0.03);
+          box-shadow: 14px 14px 20px 0px rgba(255, 255, 255, 0.03);
+  position: absolute;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.main__categories.active {
+  left: 100%;
+}
+.main__categories.animation {
+  -webkit-animation: zoom 0.6s ease forwards;
+          animation: zoom 0.6s ease forwards;
+}
+.main__categories__targets {
+  font-size: 2rem;
+  border-bottom: 2px solid #b3b3b3;
+  padding: 12px 56px;
+}
+.main__categories__targets a {
+  color: #fffffa;
+  text-decoration: none;
+  font-weight: 800;
+}
+.main__categories__targets--nexo {
+  border: none;
+}
+.main__categories::before {
+  content: "";
+  width: 100%;
+  height: 40px;
+  background-color: #181818;
+  border-radius: 12px 12px 0px 0px;
+  position: absolute;
+  top: 0;
+}
+
+.tale {
+  padding: 16px;
+  background-color: #181818;
+  color: #fffffa;
+}
+.tale p {
+  font-size: 2.4rem;
+  margin-top: 64px;
+  text-align: center;
+  font-weight: 800;
+}
+.tale__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #181818;
+  padding: 8px;
+  border-radius: 12px;
+  margin-top: 24px;
+}
+.tale__container p {
+  background-color: #282828;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0;
+}
+.tale__container p:nth-child(1) {
+  border-radius: 12px 12px 0 0;
+}
+.tale__container p:nth-last-child(1) {
+  border-radius: 0 0 12px 12px;
+}
+
+.desing {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+.desing ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+.desing ul li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.desing ul li:nth-child(1) {
+  background-color: #FF605C;
+}
+.desing ul li:nth-child(2) {
+  background-color: #FFBD44;
+}
+.desing ul li:nth-child(3) {
+  background-color: #00CA4E;
+}
+.desing ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: transparent;
+  padding: 10px;
+}
+.desing--static {
+  position: relative;
+  top: 0;
+}
+.desing--static ul {
+  gap: 16px;
+}
+.desing--static ul li {
+  width: 16px;
+  height: 16px;
+}
+.desing--static ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: transparent;
+  padding: 10px;
+}
