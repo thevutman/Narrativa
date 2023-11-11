@@ -227,9 +227,16 @@ body::-webkit-scrollbar-thumb {
 
 p a {
   color: red;
+  font-weight: 400;
 }
 p a:visited {
   color: #b3b3b3;
+}
+
+img {
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: 12px;
 }
 
 .main {

@@ -25,9 +25,16 @@ body::-webkit-scrollbar-thumb{
 p{
     a{
         color: red;
+        font-weight: 400;
 
         &:visited{
             color: $color2;
         }
     }
+}
+
+img{
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 12px;
 }
