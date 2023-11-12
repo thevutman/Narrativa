@@ -313,6 +313,26 @@ img {
 .main__container button:hover {
   background-color: #b3b3b3;
 }
+.main__container a:nth-child(3) {
+  color: white;
+  padding: 12px 20px;
+  margin-top: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #404040;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.main__container a:nth-child(3):hover {
+  background-color: #b3b3b3;
+}
 .main__container::before {
   content: "";
   width: 100%;
