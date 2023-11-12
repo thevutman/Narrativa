@@ -1,4 +1,4 @@
-alert("No Esta Terminado")
+
 
 function menu(){
     document.getElementById("main__container").classList.toggle('active')
